@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #343a40;
+            color: white;
+        }
+        .navbar, .navbar-nav .nav-link {
+            color: white;
+        }
+        .navbar-brand {
+            color: white;
+        }
+        .card {
+            background-color: #495057;
+        }
+        header {
+            background-image: url('slike/logo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            text-align: center;
+            padding: 60px 0;
+        }
+        header h1 {
+            background: rgba(0, 0, 0, 0.5);
+            display: inline-block;
+            padding: 10px 20px;
+        }
+        footer {
+            background-color: #212529;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            color: white;
+        }
+        .footer-text {
+            background: rgba(0, 0, 0, 0.5);
+            display: inline-block;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <h1>Restoran</h1>
+</header>
+
+<!-- Navigacioni meni -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Restoran</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Početna</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="galerija.html">Galerija</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Jelovnik</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Moj nalog</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#onama">O nama <span class="sr-only">(тренутна)</span></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<!-- О nama -->
+<div id="onama" class="container mt-5 mb-5">
+    <h2 class="mb-4">O nama</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h5>Zašto je naš sajt drugačiji</h5>
+            <p>Naš sajt nudi jedinstveno iskustvo, sa detaljnim pregledom naših specijaliteta i jednostavnim načinom rezervacije stolova. Uvek smo fokusirani na kvalitet i zadovoljstvo nasih klijenata.</p>
+            <h5>Naše nagrade</h5>
+            <p>Ponosni smo na nagrade koje smo osvojili, uključujući ,,Najbolji restoran u gradu"  tri godine zaredom.</p>
+            <h5>Kontakt informacije</h5>
+            <p>Telefon: +381 11 1234567</p>
+        </div>
+        <div class="col-md-6">
+            <h5>Lokacija</h5>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.427835209748!2d20.448921315801257!3d44.78656897909848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7aa4a2d6cfb3%3A0x6e56b7b7d27e8ba!2sKnez%20Mihailova%2C%20Beograd!5e0!3m2!1ssr!2srs!4v1620916679817!5m2!1ssr!2srs" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-text">
+        Copyright 2024, имена аутора
+    </div>
+</footer>
+
+<!-- Bootstrap и JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

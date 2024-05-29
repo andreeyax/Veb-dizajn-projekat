@@ -16,6 +16,7 @@
 /* 
 	TYPER
 */
+
 var Typer = function(element) {
   this.element = element;
   var delim = element.dataset.delim || ","; // default to comma

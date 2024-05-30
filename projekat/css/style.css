@@ -383,7 +383,7 @@ html, body{ height: 100%; }
 -------------------------------------------------------------------*/
 
 .banner{
-	background:url(../images/banner.jpg) no-repeat center top;
+	background:url(../slike/profilna.jpg) no-repeat center top;
 	background-attachment:fixed;
 	background-size:cover;
 	height:100vh;
@@ -1560,7 +1560,7 @@ textarea:focus, input:focus, select:focus, .bootstrap-select .dropdown-toggle:fo
 
 .footer-main{}
 .footer-news{
-	background:url(../images/newsletter-bg.jpg) no-repeat center;
+	background:url(../slike/p1.jpg) no-repeat center;
 	background-attachment:fixed;
 	background-size:cover;
 	position:relative;

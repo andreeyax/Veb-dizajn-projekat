@@ -24,11 +24,12 @@ function prijava(){
         if(korisnici[i].ime==unosime && korisnici[i].lozinka==unoslozinka){
 
             localStorage.setItem('trenutnikorisnik', unosime);
-            window.location.href="index2.html";
+            window.location.href="index2_ulogovan.html";
             return;
         }
 
     }
+    
 
     document.getElementById("greska").innerHTML="Pogrešno uneseno korisničko ime ili lozinka";
     setTimeout(function(){

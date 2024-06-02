@@ -71,10 +71,14 @@
                                     <li><a href="#footer">Kontakt</a></li>
                                     
                                     <li>
-                                        <a class="nav-link" href="index2.html">Pocetna</a>
+                                        <a class="nav-link" href="index.html">Pocetna</a>
                                     </li>
                                     <li>
                                         <a class="nav-link" href="galerija2.html">Galerija</a>
+                                    </li>
+                                    <li class="custom-sel">
+                                        <a class="selected" href="galerija2.html">SRB &nbsp;<i class="fa fa-caret-down lightblue" aria-hidden="true"></i></a>
+                                        <a class="hidden" href="galerija2_en.html">ENG</a>
                                     </li>
                                 </ul>
                             </div>
@@ -782,5 +786,27 @@
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
 </body>
+<script src="potrebni fajlovi/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
 
+    $(document).ready(function () {
+
+        // Show dropdown
+        $('.selected').hover(function () {
+            $('.custom-sel').addClass('show-sel');
+            $('.custom-sel a').removeClass('hidden');
+        });
+
+        // Hide dropdown when not focused
+        $('.custom-sel').focusout(function () {
+            $('.custom-sel').removeClass('show-sel');
+            $('.custom-sel a:not(:first)').addClass('hidden');
+        }).blur(function () {
+            $('.custom-sel').removeClass('show-sel');
+            $('.custom-sel a:not(:first)').addClass('hidden');
+        });
+
+    });
+
+</script>
 </html>

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+
+    <!-- Site Metas -->
+    <title>Red Panda</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- color -->
+    <link id="changeable-colors" rel="stylesheet" href="css/colors/orange.css" />
+    <script src="potrebni fajlovi/jquery-3.7.0.min.js"></script>
+
+    <!-- Modernizer -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <div id="loader">
+        <div id="status"></div>
+    </div>
+    <div id="site-header">
+        <header id="header" class="header-block-top">
+            <div class="container">
+                <div class="row">
+                    <div class="main-menu">
+                        <!-- navbar -->
+                        <nav class="navbar navbar-default" id="mainNav">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div class="logo">
+                                    <a class="navbar-brand js-scroll-trigger logo-header" href="#">
+                                        <img src="images/logo.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="active"><a href="#banner">Home</a></li>
+                                    <li><a href="#jela">Tri najbolja jela</a></li>
+                                    <li><a href="#our_team">Aktuelnosti</a></li>
+                                    <li><a href="#footer">Kontakt</a></li>
+                                    <li>
+                                        <a class="nav-link" href="galerija2.html">Galerija</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" href="onama2.html">O nama</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" href="jelovnik.html">Jelovnik</a>
+                                    </li>
+                                   
+                                    <li class="custom-sel">
+                                        <a class="selected" href="index.html">SRB &nbsp;<i class="fa fa-caret-down lightblue" aria-hidden="true"></i></a>
+                                        <a class="hidden" href="index_en.html">ENG</a>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                            <!-- end nav-collapse -->
+                        </nav>
+                        <!-- end navbar -->
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container-fluid -->
+        </header>
+        <!-- end header -->
+    </div>
+	<!-- end site-header -->
+	
+    <div id="banner" class="banner full-screen-mode parallax">
+        <div class="container pr">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="banner-static">
+                    <div class="banner-text">
+                        <div class="banner-cell">
+                            <h1>Red Panda</h1>
+                            <h2>Najbolji kineski restoran </h2>
+                            <p>Uverite se u nas kvalitet i atmosferu koju nudimo</p>
+                        </div>
+                        <!-- end banner-cell -->
+                    </div>
+                    <!-- end banner-text -->
+                </div>
+                <!-- end banner-static -->
+            </div>
+            <!-- end col -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end banner -->
+
+    <div id="jela" class="special-menu pad-top-100 parallax">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h2 class="block-title color-white text-center"> Tri najbolje ocenjena jela </h2>
+                        <h5 class="title-caption text-center">
+                             Naši gosti su odabrali tri jela koja se ističu svojim ukusom, kvalitetom i prezentacijom. Svako od ovih jela donosi deo autentične kineske kuhinje na vaš sto, 
+                             omogućavajući vam da uživate u pravim kulinarskim poslasticama. 
+                             Pogledajte koji su to specijaliteti osvojili srca naših gostiju.
+                        </h5>
+                    </div>
+                    <div class="special-box">
+                        <div id="owl-demo">
+                            <div class="item item-type-zoom">
+                                <a href="#" class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            Parene lepinjice (Steamed Buns)
+                                            <div class="line"></div>
+                                            <div class="dit-line">Naše parene lepinjice su savršena kombinacija mekanog, pahuljastog testa i bogatog punjenja. 
+                                                Ispunjene su sočnim mesom i začinima, što im daje izuzetan ukus koji se topi u ustima. Serviramo ih sa soja sosom i čili uljem za dodatnu aromu i pikantnost. 
+                                                Ovo jelo je idealno kao predjelo ili lagani obrok.</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="slike/best11.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a href="#" class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            Mapo Tofu (Mapo Tofu)
+                                            <div class="line"></div>
+                                            <div class="dit-line">
+                                                Mapo Tofu je jedno od najpopularnijih jela naše kuhinje, poznato po svojoj pikantnosti i bogatstvu ukusa. 
+                                                Nežni komadi tofua ukusno su upijeni u aromatični sos od fermentisanih crnih zrna i čilija, stvarajući savršenu ravnotežu između ljutine i umamija. 
+                                                Ovo jelo je idealno za sve koji vole začinjenu i autentičnu kinesku hranu.</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="slike/best22.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a href="#" class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            Kineske Prolećne Rolnice (Chinese Spring Rolls)
+                                            <div class="line"></div>
+                                            <div class="dit-line"> 
+                                                Naše kineske prolećne rolnice su hrskave, zlatne i pune sveže pripremljenog povrća i mesa. Serviramo ih uz slatko-kiseli sos koji savršeno dopunjuje njihov ukus i teksturu. 
+                                                Ove rolnice su idealan izbor za predjelo ili užinu, donoseći vam pravi duh kineske kuhinje u svakom zalogaju.</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="slike/best3.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                    <!-- end special-box -->
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end special-menu -->
+
+    <div id="our_team" class="team-main pad-top-100 pad-bottom-100 parallax">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h2 class="block-title text-center">
+						Aktuelnosti	
+					</h2>
+                        <p class="title-caption text-center">Pogledajte novosti u našem restoranu.</p>
+                    </div>
+                    <div class="team-box">
+
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6">
+                                <div class="sf-team">
+                                    <div class="thumb">
+                                        <a ><img src="slike/order.jpg" alt=""></a>
+                                    </div>
+                                    <div class="text-col">
+                                        <h3>Nova ponuda: Srećna satica!</h3>
+                                        <p>
+                                            Uživajte u našoj specijalnoj ponudi tokom srećne satice! Svaki dan od 16 do 18 časova, svi kokteli i predjela su na popustu od 50%. 
+                                            Dovedite prijatelje i opustite se uz omiljene napitke i ukusan zalogaj u prijatnom ambijentu našeg restorana.</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="sf-team">
+                                    <div class="thumb">
+                                        <a><img src="slike/cook.jpg" alt=""></a>
+                                    </div>
+                                    <div class="text-col">
+                                        <h3>Novi član tima</h3>
+                                        <p>
+                                            S ponosom predstavljamo našeg novog člana tima: šefa kuhinje, Chi Ko! Chi Ko donosi sa sobom bogatstvo iskustva iz vodećih svetskih restorana, 
+                                            i on će svojom energijom i posvećenošću osigurati da svaki vaš boravak u našem restoranu bude nezaboravan.
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="sf-team">
+                                    <div class="thumb">
+                                        <a ><img src="slike/newFood.jpg" alt=""></a>
+                                    
+                                    </div>
+                                    <div class="text-col">
+                                        <h3>Sezonski meni</h3>
+                                        <p>
+                                            Upoznajte nove ukuse sa našim sezonskim menijem koji obiluje svežim i lokalnim namirnicama.
+                                             Isprobajte lagane i osvežavajuće prolećne salate, glavna jela pripremljena od najboljih sastojaka 
+                                             i deserte koji će vas oduševiti svojom kreativnošću i ukusom.
+                                        </p>
+                                       
+                                    </div>
+                                    <div class="thumb">
+                                        <a ><img src="slike/newFood2.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </div>
+                    <!-- end team-box -->
+
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end team-main -->
+
+    <div id="footer" class="footer-main">
+       
+        <!-- end footer-news -->
+        <div class="footer-box pad-top-70">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-in-main">
+                        <div class="footer-logo">
+                            <div class="text-center">
+                                <img src="images/logo.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-a">
+                                <h3>O nama</h3>
+                                <p>Ponosni smo na nagrade koje smo osvojili, uključujući ,,Najbolji restoran u gradu"  tri godine zaredom.</p>
+                                <ul class="socials-box footer-socials pull-left">
+                                    <li>
+                                        <a><div class="social-circle-border"><i class="fa  fa-facebook"></i></div></a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <div class="social-circle-border"><i class="fa fa-twitter"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a >
+                                            <div class="social-circle-border"><i class="fa fa-google-plus"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a >
+                                            <div class="social-circle-border"><i class="fa fa-pinterest"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a >
+                                            <div class="social-circle-border"><i class="fa fa-linkedin"></i></div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!-- end footer-box-a -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-b">
+                                <h3>Akcija</h3>
+                                <ul>
+                                    <li>Italian Bomba Sandwich</li>
+                                    <li>Double Dose of Pork Belly</li>
+                                    <li>Spicy Thai Noodles</li>
+                                    <li>Triple Truffle Trotters</li>
+                                </ul>
+                            </div>
+                            <!-- end footer-box-b -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-c">
+                                <h3>Kontakt</h3>
+                                <p>
+                                    <i class="fa fa-map-signs" aria-hidden="true"></i>
+                                    <span>Terazije, Beograd</span>
+                                </p>
+                                <p>
+                                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                                    <span>+381 64123456789</span>
+                                </p>
+                                <p>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <span><a href="#">restoranRedPanda@redpanda.com</a></span>
+                                </p>
+                            </div>
+                            <!-- end footer-box-c -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-d">
+                                <h3>Radno vreme</h3>
+
+                                <ul>
+                                    <li>
+                                        <p>Ponedeljak - Četvrtak </p>
+                                        <span> 10:00 - 21:00</span>
+                                    </li>
+                                    <li>
+                                        <p>Petak - Nedelja </p>
+                                        <span>  10:00 - 23:00 </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end footer-box-d -->
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end footer-in-main -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+            <div id="copyright" class="copyright-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h6 class="copy-title"> Copyright 2024, Andrija Tomić i Maša Nikolić, Odsek za softversko inženjerstvo Elektrotehničkog fakulteta Univerziteta u Beogradu
+                                <a href="#" target="_blank"></a> </h6>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container -->
+            </div>
+            <!-- end copyright-main -->
+        </div>
+        <!-- end footer-box -->
+    </div>
+    <!-- end footer-main -->
+
+    <a href="#" class="scrollup" style="display: none;">Scroll</a>
+
+    <section id="color-panel" class="close-color-panel">
+        <a class="panel-button gray2"><i class="fa fa-cog fa-spin fa-2x"></i></a>
+        <!-- Colors -->
+        <div class="segment">
+            <h4 class="gray2 normal no-padding">Color Scheme</h4>
+            <a title="orange" class="switcher orange-bg"></a>
+            <a title="strong-blue" class="switcher strong-blue-bg"></a>
+            <a title="moderate-green" class="switcher moderate-green-bg"></a>
+            <a title="vivid-yellow" class="switcher vivid-yellow-bg"></a>
+        </div>
+    </section>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+</body>
+
+<script src="potrebni fajlovi/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        // Show dropdown
+        $('.selected').hover(function () {
+            $('.custom-sel').addClass('show-sel');
+            $('.custom-sel a').removeClass('hidden');
+        });
+
+        // Hide dropdown when not focused
+        $('.custom-sel').focusout(function () {
+            $('.custom-sel').removeClass('show-sel');
+            $('.custom-sel a:not(:first)').addClass('hidden');
+        }).blur(function () {
+            $('.custom-sel').removeClass('show-sel');
+            $('.custom-sel a:not(:first)').addClass('hidden');
+        });
+
+    });
+
+</script>
+
+</html>

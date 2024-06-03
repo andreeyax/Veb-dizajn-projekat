@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+
+    <!-- Site Metas -->
+    <title>Red Panda - jelovnik</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- color -->
+    <link id="changeable-colors" rel="stylesheet" href="css/colors/orange.css" />
+
+    <!-- Modernizer -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        dialog{
+           width: 50%;
+           height: 60%;
+           background-color: bisque;
+           box-shadow: 0 0 10px #343333;
+           border: 0;
+           padding: 0;
+           /*display: flex;
+           justify-content: center;
+           align-items: center;*/
+
+        }
+
+        #close-modal{
+            position: absolute;
+            top:10px;
+            right: 15px;
+            color: black;
+            font-size: 35px;
+            z-index: 1;
+        }
+
+        #close-modal:hover{
+            cursor:pointer;
+        }
+
+         /* Stil za unutrašnje elemente */
+        .modal-content22 {
+            text-align: center;
+        }
+
+        .modal-content22 .title-caption {
+            display: block;
+            margin: 5px 0;
+            padding: 15px 20px;
+        }
+
+        .modal-content22 input[type="number"] {
+            width: 60px;
+            margin: 10px;
+            margin-top: 4px;
+        }
+
+        .modal-content22 input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .modal-content22 label {
+            margin-right: 15px;
+        }
+
+        .modal-content22 button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #E59866;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .modal-content22 button:hover {
+            background-color: #E59866;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="loader">
+        <div id="status"></div>
+    </div>
+    <div id="site-header">
+        <header id="header" class="header-block-top">
+            <div class="container">
+                <div class="row">
+                    <div class="main-menu">
+                        <!-- navbar -->
+                        <nav class="navbar navbar-default" id="mainNav">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div class="logo">
+                                    <a class="navbar-brand js-scroll-trigger logo-header" href="#">
+                                        <img src="images/logo.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="active"><a href="#banner">Home</a></li>
+                                    
+                                    <li><a href="#predjela">Predjela</a></li>
+                                    <li><a href="#glavnajela">Glavna Jela</a></li>
+                                    <li><a href="#dezert">Dezerti</a></li>
+                                    
+                                    <li><a href="#footer">Kontakt</a></li>
+                                    <li>
+                                        <a class="nav-link" href="index.html">Pocetna</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" href="galerija2.html">Galerija</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" href="onama2.html">O nama</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end nav-collapse -->
+                        </nav>
+                        <!-- end navbar -->
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container-fluid -->
+        </header>
+        <!-- end header -->
+    </div>
+	<!-- end site-header -->
+	
+    <div id="banner" class="banner full-screen-mode parallax">
+        <div class="container pr">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="banner-static">
+                    <div class="banner-text">
+                        <div class="banner-cell">
+                            <h1>Red Panda </h1>
+                            <h2>Najbolji kineski restoran  </h2>
+                            <p>Uverite se u nas kvalitet i atmosferu koju nudimo</p>
+                           
+                            
+                        </div>
+                        <!-- end banner-cell -->
+                    </div>
+                    <!-- end banner-text -->
+                </div>
+                <!-- end banner-static -->
+            </div>
+            <!-- end col -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end banner -->
+
+    <!--PREDJELA-->
+    <div id="predjela" style="background-color: bisque;" >
+        <div class="container">
+            <div class="row" style="margin-top: 35px;">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h2 class="block-title color-white text-center"> Predjela</h2>
+                        <h5 class="title-caption text-center" style="color: grey;">
+                            Naš izbor predjela je osmišljen da probudi vaša čula i pripremi vas za uživanje u glavnim jelima.<br>
+                            Sa pažnjom odabrani sastojci i autentični recepti garantuju nezaboravno gastronomsko iskustvo. Uživajte u raznovrsnosti ukusa koji odražavaju bogatstvo naše kulinarske tradicije.
+                            Naše predjela su idealan način da započnete svoj obrok, pružajući vam prvi utisak o našoj kulinarskoj veštini i posvećenosti kvalitetu.
+                        </h5>
+                    </div>
+                    <!--<button id="sort-button" class="btn btn-primary mb-3">Sortiraj po imenu</button>-->
+                    <div class="special-box">
+                        <div id="owl-demo" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
+                          
+                            <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
+                                <a href="javascript:prozor()" class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline" name="steamed buns">
+                                            Parene lepinjice (Steamed Buns)
+                                            <div class="line"></div>
+                                            <div class="dit-line">Naše parene lepinjice su savršena kombinacija mekanog, pahuljastog testa i bogatog punjenja. 
+                                            </div>
+                                            <div class="line"></div>
+                                            <h5 class="dit-line" style="color: white;">Mala porcija: 550 din <br>Velika porcija: 790 din</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div >
+                                    <img src="slike/jelovnik/best11.jpg" alt="sp-menu" style="height: 350px;">
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
+                                <a href="javascript:prozor()" class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline" name="Crispy Crab Rangoon">
+                                            Crispy Crab Rangoon
+                                            <div class="line"></div>
+                                            <div class="dit-line">
+                                                Crispy Crab Rangoon su savršeno hrskavi zalogaji punjeni kremastim sirom i nežnim mesom krabe. 
+                                                Ove zlatne rolnce imaju neponovljiv ukus koji spaja slatkoću i slanost u savršenoj harmoniji. Serviraju se uz slatko-kiseli sos koji dodatno ističe njihovu teksturu. 
+                                            </div>
+                                            <div class="line"></div>
+                                            <h5 class="dit-line" style="color: white;">Mala porcija: 500 din <br>Velika porcija: 750 din</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img" >
+                                    <img src="slike/jelovnik/crispy-crab-rangoon.jpg" alt="sp-menu" style="height: 350px;">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
+                                <a href="javascript:prozor()" class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline" name="Kineske Prolećne Rolnice">
+                                            Kineske Prolećne Rolnice (Chinese Spring Rolls)
+                                            <div class="line"></div>
+                                            <div class="dit-line"> 
+                                                Naše kineske prolećne rolnice su hrskave, zlatne i pune sveže pripremljenog povrća i mesa. Serviramo ih uz slatko-kiseli sos koji savršeno dopunjuje njihov ukus i teksturu.
+                                            </div>
+                                            <div class="line"></div>
+                                            <h5 class="dit-line" style="color: white;">Mala porcija: 600 din <br>Velika porcija: 820 din</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img" >
+                                    <img src="slike/jelovnik/best3.jpg" alt="sp-menu" style="height: 350px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end special-box -->
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+
+    <!--GLAVNO JELO-->
+    <div id="glavnajela" style="background-color: #E59866 ">
+        <div class="container">
+            <div class="row" style="margin-top: 35px;">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h2 class="block-title color-white text-center"> Glavna jela</h2>
+                        <h5 class="title-caption text-center">
+                            Naš izbor glavnih jela nudi raznovrsnost ukusa i autentičnih recepata koji će zadovoljiti i najzahtevnije gurmane. <br>
+                            Svaka porcija je pažljivo pripremljena sa najsvežijim sastojcima kako bi se osigurao vrhunski kvalitet i nezaboravno iskustvo.<br>
+
+                            Naše glavna jela su idealan način da iskusite bogatstvo i raznovrsnost kineske kuhinje, pružajući vam obrok koji je istovremeno zadovoljavajući i nezaboravan.
+                        </h5>
+                    </div>
+                    <div class="special-box">
+                        <div id="owl-demo" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
+                            <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
+                                <a href="javascript:prozor()" class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            Chinese Spareribs
+                                            <div class="line"></div>
+                                            <div class="dit-line">Chinese Spareribs su marinirana rebarca koja se lagano peku do savršene mekoće. 
+                                                Naša rebarca su obogaćena tradicionalnim kineskim začinima i glazurom od meda i soja sosa, što im daje neponovljiv slatko-slani ukus. 
+                                                Svaki zalogaj pruža pravi užitak.
+                                                </div>
+                                                <div class="line"></div>
+                                                <h5 class="dit-line" style="color: white;">Mala porcija: 750 din <br>Velika porcija: 1100 din</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div >
+                                    <img src="slike/jelovnik/chinese-spareribs.jpg" alt="sp-menu" style="height: 350px;">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
+                                <a href="javascript:prozor()" class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            Mapo Tofu (Mapo Tofu)
+                                            <div class="line"></div>
+                                            <div class="dit-line">
+                                                Mapo Tofu je jedno od najpopularnijih jela naše kuhinje, poznato po svojoj pikantnosti i bogatstvu ukusa. </div>
+                                                <div class="line"></div>
+                                            <h5 class="dit-line" style="color: white;">Mala porcija: 680 din <br>Velika porcija: 1020 din</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img" >
+                                    <img src="slike/jelovnik/best2.jpg" alt="sp-menu" style="height: 350px;">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
+                                <a href="javascript:prozor()" class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            Honey Walnut Shrimp
+                                            <div class="line"></div>
+                                            <div class="dit-line"> 
+                                                Honey Walnut Shrimp je jelo koje kombinuje hrskavost kozica, bogatstvo oraha i slatkoću medenog preliva. 
+                                                Svaki zalogaj je harmonija između sočnih kozica umotanih u hrskavu koricu, prelivene slatkom i kremastom medeno-orahovom glazurom. 
+                                                Ovo jelo osvaja srca. 
+                                            </div>
+                                            <div class="line"></div>
+                                            <h5 class="dit-line" style="color: white;">Mala porcija: 720 din <br>Velika porcija: 1080 din</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img" >
+                                    <img src="slike/jelovnik/honey-walnut-shrimp.jpg" alt="sp-menu" style="height: 350px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end special-box -->
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+
+    <div id="dezert" style="background-color: bisque;">
+        <div class="container">
+            <div class="row" style="margin-top: 35px; margin-bottom: 45px;">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h2 class="block-title color-white text-center"> Dezerti </h2>
+                        <h5 class="title-caption text-center" style="color: gray;">
+                            Naša kolekcija dezerta nudi neodoljive slatke poslastice koje će zadovoljiti svačiji ukus. Svaki dezert je pažljivo pripremljen sa svežim sastojcima i vrhunskom pažnjom kako bi pružio nezaboravno gastronomsko iskustvo.
+                            Izaberite nešto iz naše ponude kako biste završili obrok sa stilom. Od tradicionalnih kineskih poslastica do internacionalnih favorita, naši dezerti su savršen završetak vašeg obroka.
+                        </h5>
+                    </div>
+                    <div class="text-center">
+                        <button id="sortBtn" class="btn btn-primary">Sort by Name</button>
+                    </div>
+                    <div class="special-box">
+                        <div id="owl-demo" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
+                            <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
+                                <a href="javascript:prozor()" class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline headline-dezerti" name="Sponge Cake">
+                                            Sponge Cake
+                                            <div class="line"></div>
+                                            <div class="dit-line">
+                                                Sponge Cake je lagan i vazdušast dezert koji se topi u ustima. 
+                                                Pripremljen sa pažljivo odabranim sastojcima, ovaj kolač ima savršeno uravnotežen ukus i delikatnu teksturu. 
+                                                Savršen je izbor za one koji žele uživati u jednostavnom, ali izuzetno ukusnom desertu. 
+                                                </div>
+                                            <div class="line"></div>
+                                            <h5 class="dit-line" style="color: white;">Mala porcija: 520 din <br>Velika porcija: 780 din</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div >
+                                    <img src="slike/jelovnik/sponge-cake.jpg" alt="sp-menu" style="height: 350px;">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
+                                <a href="javascript:prozor()" class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline headline-dezerti" name="Almond Cookies">
+                                            Almond Cookies
+                                            <div class="line"></div>
+                                            <div class="dit-line">
+                                                Almond Cookies su hrskavi i mirisni keksići koji savršeno kombinuju bogatstvo badema sa blagom slatkoćom. 
+                                                Pripremljeni po tradicionalnom receptu, ovi keksići su idealni za sve prilike. 
+                                             </div>
+                                             <div class="line"></div>
+                                            <h5 class="dit-line" style="color: white;">Mala porcija: 500 din <br>Velika porcija: 740 din</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img" >
+                                    <img src="slike/jelovnik/almond-cookies.jpg" alt="sp-menu" style="height: 350px;">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
+                                <a href="javascript:prozor()" class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline headline-dezerti" name="Egg Tarts">
+                                            Egg Tarts
+                                            <div class="line"></div>
+                                            <div class="dit-line"> 
+                                                Egg Tarts su klasične kineske poslastice koje osvajaju svojim kremastim punjenjem i hrskavom korom. 
+                                                Svaka tartaleta sadrži bogat, glatki krem od jaja ušuškan u zlatno, hrskavo testo. 
+                                                Savršeno uravnoteženi, delikatan spoj blage slatkoće i kremaste teksture. 
+                                
+                                            </div>
+                                            <div class="line"></div>
+                                            <h5 class="dit-line" style="color: white;">Mala porcija: 580 din <br>Velika porcija: 820 din</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img" >
+                                    <img src="slike/jelovnik/egg-tarts.jpg" alt="sp-menu" style="height: 350px;">
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+
+                        
+                    </div>
+
+                    <!--ODAVDE -->
+                    
+
+                    <!-- end special-box -->
+                </div>
+                
+                <!-- end col -->
+            </div>
+            
+            
+            <!-- end row -->
+        </div>
+
+        
+
+        <!-- end container -->
+    </div>
+
+
+    <div id="footer" class="footer-main">
+        
+        <!-- end footer-news -->
+        <div class="footer-box pad-top-70">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-in-main">
+                        <div class="footer-logo">
+                            <div class="text-center">
+                                <img src="images/logo.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-a">
+                                <h3>O nama</h3>
+                                <p>Ponosni smo na nagrade koje smo osvojili, uključujući ,,Najbolji restoran u gradu"  tri godine zaredom.</p>
+                                <ul class="socials-box footer-socials pull-left">
+                                    <li>
+                                        <a><div class="social-circle-border"><i class="fa  fa-facebook"></i></div></a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <div class="social-circle-border"><i class="fa fa-twitter"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a >
+                                            <div class="social-circle-border"><i class="fa fa-google-plus"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a >
+                                            <div class="social-circle-border"><i class="fa fa-pinterest"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a >
+                                            <div class="social-circle-border"><i class="fa fa-linkedin"></i></div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!-- end footer-box-a -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-b">
+                                <h3>Akcija</h3>
+                                <ul>
+                                    <li>Italian Bomba Sandwich</li>
+                                    <li>Double Dose of Pork Belly</li>
+                                    <li>Spicy Thai Noodles</li>
+                                    <li>Triple Truffle Trotters</li>
+                                </ul>
+                            </div>
+                            <!-- end footer-box-b -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-c">
+                                <h3>Kontakt</h3>
+                                <p>
+                                    <i class="fa fa-map-signs" aria-hidden="true"></i>
+                                    <span>Terazije, Beograd</span>
+                                </p>
+                                <p>
+                                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                                    <span>+381 64123456789</span>
+                                </p>
+                                <p>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <span><a href="#">restoranRedPanda@redpanda.com</a></span>
+                                </p>
+                            </div>
+                            <!-- end footer-box-c -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-d">
+                                <h3>Radno vreme</h3>
+
+                                <ul>
+                                    <li>
+                                        <p>Ponedeljak - Četvrtak </p>
+                                        <span> 10:00 - 21:00</span>
+                                    </li>
+                                    <li>
+                                        <p>Petak - Nedelja </p>
+                                        <span>  10:00 - 23:00 </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end footer-box-d -->
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end footer-in-main -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+            <div id="copyright" class="copyright-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h6 class="copy-title"> Copyright 2024, Andrija Tomić i Maša Nikolić, Odsek za softversko inženjerstvo Elektrotehničkog fakulteta Univerziteta u Beogradu
+                                <a href="#" target="_blank"></a> </h6>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container -->
+            </div>
+            <!-- end copyright-main -->
+        </div>
+        <!-- end footer-box -->
+    </div>
+    <!-- end footer-main -->
+
+    <a href="#" class="scrollup" style="display: none;">Scroll</a>
+
+    <section id="color-panel" class="close-color-panel">
+        <a class="panel-button gray2"><i class="fa fa-cog fa-spin fa-2x"></i></a>
+        <!-- Colors -->
+        <div class="segment">
+            <h4 class="gray2 normal no-padding">Color Scheme</h4>
+            <a title="orange" class="switcher orange-bg"></a>
+            <a title="strong-blue" class="switcher strong-blue-bg"></a>
+            <a title="moderate-green" class="switcher moderate-green-bg"></a>
+            <a title="vivid-yellow" class="switcher vivid-yellow-bg"></a>
+        </div>
+    </section>
+
+
+
+    
+    
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+    <dialog>
+        
+        <div class=".col-xs-1">
+            &nbsp;
+        </div>
+        <div class=".col-xs-10">
+            <div class="modal-content22 ">
+                <span class="title-caption" style="color: grey;">
+                    Kolicina:
+                </span>
+                <input type="number" value="1">
+                <span class="title-caption" style="color: grey;">
+                    Velicina porcije:
+                </span>
+                <input type="radio" id="velicina-porcije1" name="velicina-porcije" value="30">
+                <label for="velicina-porcije1">mala</label><br>
+                <input type="radio" id="velicina-porcije2" name="velicina-porcije" value="60">
+                <label for="velicina-porcije2">velika</label><br>
+                <button >Dodaj u korpu</button>
+            </div>
+        </div>
+        <div class=".col-xs-1">
+            <div id="close-modal">×</div>
+        </div>
+        
+    </dialog>
+        
+    </dialog>
+ 
+  
+</body>
+<script>
+    function prozor(){
+        document.querySelector("dialog").showModal()
+    }
+
+    document.querySelector("#close-modal").addEventListener('click',()=>{
+        document.querySelector("dialog").close()
+    })
+    
+
+    $(document).ready(function () {
+        $('#sort-button').click(function () {
+            var items = $('.special-box .item').get();
+
+            items.sort(function (a, b) {
+                alert($(a).find('.headline').attr('name'))
+                alert($(b).find('.headline').attr('name'))
+                var nameA = $(a).find('.headline').attr('name').toUpperCase();
+                var nameB = $(b).find('.headline').attr('name').toUpperCase();
+                if (nameA < nameB) {
+                    return -1;
+                }
+                if (nameA > nameB) {
+                    return 1;
+                }
+                return 0;
+            });
+
+            $.each(items, function (i, item) {
+                $('.special-box .owl-carousel').append(item);
+            });
+        });
+    });
+</script>
+
+
+</html>

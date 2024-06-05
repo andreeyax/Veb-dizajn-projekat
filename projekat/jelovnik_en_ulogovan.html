@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
 
     <!-- Site Metas -->
-    <title>Food Funday Restaurant - One page HTML Responsive</title>
+    <title>Red Panda - menu</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -39,8 +39,69 @@
     <![endif]-->
 
     <style>
-        .item-img img{
-            
+        dialog{
+           width: 50%;
+           height: 60%;
+           background-color: bisque;
+           box-shadow: 0 0 10px #343333;
+           border: 0;
+           padding: 0;
+           /*display: flex;
+           justify-content: center;
+           align-items: center;*/
+
+        }
+
+        #close-modal{
+            position: absolute;
+            top:10px;
+            right: 15px;
+            color: black;
+            font-size: 35px;
+            z-index: 1;
+        }
+
+        #close-modal:hover{
+            cursor:pointer;
+        }
+
+         /* Stil za unutrašnje elemente */
+        .modal-content22 {
+            text-align: center;
+        }
+
+        .modal-content22 .title-caption {
+            display: block;
+            margin: 5px 0;
+            padding: 15px 20px;
+        }
+
+        .modal-content22 input[type="number"] {
+            width: 60px;
+            margin: 10px;
+            margin-top: 4px;
+        }
+
+        .modal-content22 input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .modal-content22 label {
+            margin-right: 15px;
+        }
+
+        .modal-content22 button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #E59866;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .modal-content22 button:hover {
+            background-color: #E59866;
         }
     </style>
 
@@ -78,15 +139,15 @@
                                     <li><a href="#glavnajela">Glavna Jela</a></li>
                                     <li><a href="#dezert">Dezerti</a></li>
                                     
-                                    <li><a href="#footer">Kontakt</a></li>
+                                    <li><a href="#footer">Contact</a></li>
                                     <li>
-                                        <a class="nav-link" href="index2.html">Pocetna</a>
+                                        <a class="nav-link" href="index_en_ulogovan.html">Home</a>
                                     </li>
                                     <li>
-                                        <a class="nav-link" href="galerija2.html">Galerija</a>
+                                        <a class="nav-link" href="galerija2_en.html">Galerija</a>
                                     </li>
                                     <li>
-                                        <a class="nav-link" href="onama2.html">O nama</a>
+                                        <a class="nav-link" href="onama2_en.html">O nama</a>
                                     </li>
                                     
                                 </ul>
@@ -111,8 +172,8 @@
                     <div class="banner-text">
                         <div class="banner-cell">
                             <h1>Red Panda </h1>
-                            <h2>Najbolji kineski restoran  </h2>
-                            <p>Uverite se u nas kvalitet i atmosferu koju nudimo</p>
+                            <h2>Best chinese restaurant </h2>
+                            <p>Experience the quality and atmosphere we offer</p>
                            
                             
                         </div>
@@ -144,7 +205,7 @@
                     <div class="special-box">
                         <div id="owl-demo" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
                             <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
-                                <a href="#" class="item-hover">
+                                <a href="javascript:prozor('parene-lepinjice')" class="item-hover">
                                     <div class="item-info">
                                         <div class="headline">
                                             Steamed Buns
@@ -161,7 +222,7 @@
                                 </div>
                             </div>
                             <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
-                                <a href="#" class="item-hover">
+                                <a href="javascript:prozor('crispy-crab-rangoon')" class="item-hover">
                                     <div class="item-info">
                                         <div class="headline">
                                             Crispy Crab Rangoon
@@ -181,7 +242,7 @@
                                 </div>
                             </div>
                             <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
-                                <a href="#" class="item-hover">
+                                <a href="javascript:prozor('kineske-prolecne-rolnice')" class="item-hover">
                                     <div class="item-info">
                                         <div class="headline">
                                             Chinese Spring Rolls
@@ -226,7 +287,7 @@
                     <div class="special-box">
                         <div id="owl-demo" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
                             <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
-                                <a href="#" class="item-hover">
+                                <a href="javascript:prozor('chinese-spareribs')" class="item-hover">
                                     <div class="item-info">
                                         <div class="headline">
                                             Chinese Spareribs
@@ -245,7 +306,7 @@
                                 </div>
                             </div>
                             <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
-                                <a href="#" class="item-hover">
+                                <a href="javascript:prozor('mapo-tofu')" class="item-hover">
                                     <div class="item-info">
                                         <div class="headline">
                                             Mapo Tofu (Mapo Tofu)
@@ -262,7 +323,7 @@
                                 </div>
                             </div>
                             <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
-                                <a href="#" class="item-hover">
+                                <a href="javascript:prozor('honey-walnut-shrimp')" class="item-hover">
                                     <div class="item-info">
                                         <div class="headline">
                                             Honey Walnut Shrimp
@@ -310,7 +371,7 @@
                     <div class="special-box">
                         <div id="owl-demo" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
                             <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
-                                <a href="#" class="item-hover">
+                                <a href="javascript:prozor('sponge-cake')" class="item-hover">
                                     <div class="item-info">
                                         <div class="headline">
                                             Sponge Cake
@@ -329,7 +390,7 @@
                                 </div>
                             </div>
                             <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
-                                <a href="#" class="item-hover">
+                                <a href="javascript:prozor('almond-cookies')" class="item-hover">
                                     <div class="item-info">
                                         <div class="headline">
                                             Almond Cookies
@@ -348,7 +409,7 @@
                                 </div>
                             </div>
                             <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
-                                <a href="#" class="item-hover">
+                                <a href="javascript:prozor('egg-tarts')" class="item-hover">
                                     <div class="item-info">
                                         <div class="headline">
                                             Egg Tarts
@@ -537,6 +598,114 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
+
+    <dialog>
+        
+        <div class=".col-xs-1">
+            &nbsp;
+        </div>
+        <div class=".col-xs-10">
+            <div class="modal-content22 ">
+                <span class="title-caption" style="color: grey;">
+                    Kolicina:
+                </span>
+                <input id="kolicina" type="number" value="1">
+                <span class="title-caption" style="color: grey;">
+                    Velicina porcije:
+                </span>
+                <input type="radio" id="velicina-porcije1" name="velicina-porcije" value="30">
+                <label for="velicina-porcije1">mala</label><br>
+                <input type="radio" id="velicina-porcije2" name="velicina-porcije" value="60">
+                <label for="velicina-porcije2">velika</label><br>
+                <button id="dodavanje" onclick="dodaj()">Dodaj u korpu</button>
+            </div>
+        </div>
+        <div class=".col-xs-1">
+            <div id="close-modal">×</div>
+        </div>
+        
+    </dialog>
+        
 </body>
+
+<script>
+
+function dodaj(){
+        if(localStorage.getItem('proizvodi')!=null){
+            proizvodi=JSON.parse(localStorage.getItem('proizvodi'))
+        }
+        jelo=localStorage.getItem('jelo');
+        k=localStorage.getItem('trenutnikorisnik');
+        ch=null
+        vel=document.getElementsByName('velicina-porcije');
+        if(vel[0].checked){
+            ch=30;
+        }
+        else if(vel[1].checked){
+            ch=60;
+        }
+
+        kol=document.getElementById("kolicina").value;
+        p={
+            korisnik:k,
+            imejela:jelo,
+            velicina:ch,
+            kolicina:kol
+
+        }
+
+        proizvodi.push(p);
+        localStorage.setItem('proizvodi',JSON.stringify(proizvodi));
+        
+        
+    }
+
+    function prozor(ime){
+        document.querySelector("dialog").showModal()
+        localStorage.setItem('jelo',ime)
+        //console.log(ime);
+    }
+
+    document.querySelector("#close-modal").addEventListener('click',()=>{
+        document.querySelector("dialog").close()
+    })
+    
+
+    $(document).ready(function () {
+
+        korisnici=[];
+        proizvodi=[];
+        narudzbine=[];
+
+       
+
+        if(localStorage.getItem('proizvodi')!=null){
+            proizvodi=JSON.parse(localStorage.getItem('proizvodi'))
+        }
+
+
+        $('#sort-button').click(function () {
+            var items = $('.special-box .item').get();
+
+            items.sort(function (a, b) {
+                alert($(a).find('.headline').attr('name'))
+                alert($(b).find('.headline').attr('name'))
+                var nameA = $(a).find('.headline').attr('name').toUpperCase();
+                var nameB = $(b).find('.headline').attr('name').toUpperCase();
+                if (nameA < nameB) {
+                    return -1;
+                }
+                if (nameA > nameB) {
+                    return 1;
+                }
+                return 0;
+            });
+
+            $.each(items, function (i, item) {
+                $('.special-box .owl-carousel').append(item);
+            });
+        });
+    });
+</script>
 
 </html>

@@ -34,7 +34,7 @@
 
     <!-- Modernizer -->
     <script src="js/modernizer.js"></script>
-    <script src="js/registracija.js"></script>
+    <script src="js/prijava.js"></script>
 
     
 
@@ -136,6 +136,7 @@
 
 <body>
     <div id="body">
+    
         <div id="loader">
             <div id="status"></div>
         </div>
@@ -161,12 +162,12 @@
                                 </div>
                                 <div id="navbar" class="navbar-collapse collapse">
                                     <ul class="nav navbar-nav navbar-right">
-                                        <li><a href="index.html">Pocetna</a></li>
+                                        <li><a href="index_en.html">Home</a></li>
                                         <li>
-                                            <a class="nav-link" href="galerija2.html">Galerija</a>
+                                            <a class="nav-link" href="galerija2_en.html">Gallery</a>
                                         </li>
                                         <li>
-                                            <a class="nav-link" href="onama2.html">O nama</a>
+                                            <a class="nav-link" href="onama2_en.html">About us</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -184,18 +185,18 @@
         <!-- end site-header -->
         
         <div id="forma" style="background-color: rgb(235, 224, 206);width: 45%;display: flex;justify-content: center;margin: auto;height: 550px;border-radius: 20px; padding: 20px;">
-            <div style="font-size: 35px;color: black;font-family:Arial, Helvetica, sans-serif;height: 50px;">
-                    Registracija
+            <div style="font-size: 40px;color: black;font-family:Arial, Helvetica, sans-serif;height: 50px;">
+                Login
             </div>
             <div>
-                <label id="labela_ime" style="font-size: 20px;">Korisničko ime</label>  
+                <label id="labela_ime" style="font-size: 20px;">Username</label>  
             </div>
             <div id="unos_imediv">
                 <input type="text" id="unos_ime" autocomplete="off">
             </div>
 
             <div>
-                <label id="labela_lozinka" style="font-size: 20px;">Lozinka</label>  
+                <label id="labela_lozinka" style="font-size: 20px;">Password</label>  
             </div>
             <div id="unos_imediv">
                 <input type="password" id="unos_lozinka" autocomplete="off">
@@ -206,10 +207,12 @@
             </div>
 
             <div id="prijavi_sediv">
-                <button id="prijavise_dugme" class="btn btn-warning" onclick="registrujse()">Registruj se</button>
-                <a id="registrujse" href="prijava.html">Prijavi se!</a>
+                <button id="prijavise_dugme" class="btn btn-warning" onclick="prijava_en()">Log In</button>
+                <a id="registrujse" href="registracija_en.html">Register!</a>
             </div>
         </div>
+
+        
         
         
 
@@ -232,11 +235,10 @@
         <script src="js/bootstrap.min.js"></script>
         <!-- ALL PLUGINS -->
         <script src="js/custom.js"></script>
-
     </div>
 
     <div id="footer" class="footer-main">
-       
+        
         <!-- end footer-news -->
         <div class="footer-box pad-top-70">
             <div class="container">
@@ -249,29 +251,31 @@
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                             <div class="footer-box-a">
-                                <h3>O nama</h3>
-                                <p>Ponosni smo na brojne nagrade koje smo osvojili tokom godina, što je dokaz naše posvećenosti kvalitetu i inovacijama u kulinarstvu.</p>
+                                <h3>About Us</h3>
+                                <p>We are proud of the numerous awards we have won over the years, which are a testament to our commitment to quality and innovation in culinary arts.</p>
                                 <ul class="socials-box footer-socials pull-left">
                                     <li>
-                                        <a><div class="social-circle-border"><i class="fa  fa-facebook"></i></div></a>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa  fa-facebook"></i></div>
+                                        </a>
                                     </li>
                                     <li>
-                                        <a>
+                                        <a href="#">
                                             <div class="social-circle-border"><i class="fa fa-twitter"></i></div>
                                         </a>
                                     </li>
                                     <li>
-                                        <a >
+                                        <a href="#">
                                             <div class="social-circle-border"><i class="fa fa-google-plus"></i></div>
                                         </a>
                                     </li>
                                     <li>
-                                        <a >
+                                        <a href="#">
                                             <div class="social-circle-border"><i class="fa fa-pinterest"></i></div>
                                         </a>
                                     </li>
                                     <li>
-                                        <a >
+                                        <a href="#">
                                             <div class="social-circle-border"><i class="fa fa-linkedin"></i></div>
                                         </a>
                                     </li>
@@ -283,11 +287,11 @@
                         <!-- end col -->
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                             <div class="footer-box-b">
-                                <h3>Aktuelnosti</h3>
+                                <h3>News</h3>
                                 <ul>
-                                    <li><a>Nova ponuda: Srećna satica!</a></li>
-                                    <li><a>Novi član tima: Chi Ko</a></li>
-                                    <li><a>Sezonski meni</a></li>
+                                    <li><a>New Offer: Happy Hour!</a></li>
+                                    <li><a >New Team Member: Chi Ko</a></li>
+                                    <li><a >Seasonal Menu</a></li>
                                 </ul>
                             </div>
                             <!-- end footer-box-b -->
@@ -295,14 +299,16 @@
                         <!-- end col -->
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                             <div class="footer-box-c">
-                                <h3>Kontakt</h3>
+                                <h3>Contact Us</h3>
                                 <p>
                                     <i class="fa fa-map-signs" aria-hidden="true"></i>
-                                    <span>Knez Mihailova, Beograd</span>
+                                    <span>Knez Mihailova, Belgrade</span>
                                 </p>
                                 <p>
                                     <i class="fa fa-mobile" aria-hidden="true"></i>
-                                    <span>+381 64123456789</span>
+                                    <span>
+                                    +381 64123456789 
+								</span>
                                 </p>
                                 <p>
                                     <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -314,16 +320,16 @@
                         <!-- end col -->
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                             <div class="footer-box-d">
-                                <h3>Radno vreme</h3>
+                                <h3>Opening Hours</h3>
 
                                 <ul>
                                     <li>
-                                        <p>Ponedeljak - Četvrtak </p>
-                                        <span> 10:00 - 21:00</span>
+                                        <p>Monday - Thursday </p>
+                                        <span> 10:00 AM - 9:00 PM</span>
                                     </li>
                                     <li>
-                                        <p>Petak - Nedelja </p>
-                                        <span>  10:00 - 23:00 </span>
+                                        <p>Friday - Sunday </p>
+                                        <span>  10:00 AM - 11:00 PM</span>
                                     </li>
                                 </ul>
                             </div>
@@ -340,8 +346,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <h6 class="copy-title"> Copyright 2024, Andrija Tomić i Maša Nikolić, Odsek za softversko inženjerstvo Elektrotehničkog fakulteta Univerziteta u Beogradu
-                                <a href="#" target="_blank"></a> </h6>
+                            <h6 class="copy-title"> Copyright 2024, Andrija Tomić i Maša Nikolić, Department of Software Engineering, Faculty of Electrical Engineering, University of Belgrade <a href="#" target="_blank"></a> </h6>
                         </div>
                     </div>
                     <!-- end row -->
@@ -353,6 +358,8 @@
         <!-- end footer-box -->
     </div>
     <!-- end footer-main -->
+    
 </body>
+
 
 </html>

@@ -206,7 +206,7 @@
                         <div id="owl-demo" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
                           
                             <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
-                                <a href="javascript:prozor()" class="item-hover">
+                                <a href="javascript:prozor('parene-lepinjice')" class="item-hover">
                                     <div class="item-info">
                                         <div class="headline" name="steamed buns">
                                             Parene lepinjice (Steamed Buns)
@@ -225,7 +225,7 @@
                             
                             
                             <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
-                                <a href="javascript:prozor()" class="item-hover">
+                                <a href="javascript:prozor('crispy-crab-rangoon')" class="item-hover">
                                     <div class="item-info">
                                         <div class="headline" name="Crispy Crab Rangoon">
                                             Crispy Crab Rangoon
@@ -244,7 +244,7 @@
                                 </div>
                             </div>
                             <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
-                                <a href="javascript:prozor()" class="item-hover">
+                                <a href="javascript:prozor('kineske-prolecne-rolnice')" class="item-hover">
                                     <div class="item-info">
                                         <div class="headline" name="Kineske Prolećne Rolnice">
                                             Kineske Prolećne Rolnice (Chinese Spring Rolls)
@@ -289,7 +289,7 @@
                     <div class="special-box">
                         <div id="owl-demo" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
                             <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
-                                <a href="javascript:prozor()" class="item-hover">
+                                <a href="javascript:prozor('chinese-spareribs')" class="item-hover">
                                     <div class="item-info">
                                         <div class="headline">
                                             Chinese Spareribs
@@ -308,7 +308,7 @@
                                 </div>
                             </div>
                             <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
-                                <a href="javascript:prozor()" class="item-hover">
+                                <a href="javascript:prozor('mapo-tofu')" class="item-hover">
                                     <div class="item-info">
                                         <div class="headline">
                                             Mapo Tofu (Mapo Tofu)
@@ -325,7 +325,7 @@
                                 </div>
                             </div>
                             <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
-                                <a href="javascript:prozor()" class="item-hover">
+                                <a href="javascript:prozor('honey-walnut-shrimp')" class="item-hover">
                                     <div class="item-info">
                                         <div class="headline">
                                             Honey Walnut Shrimp
@@ -372,7 +372,7 @@
                     <div class="special-box">
                         <div id="owl-demo" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
                             <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
-                                <a href="javascript:prozor()" class="item-hover">
+                                <a href="javascript:prozor('sponge-cake')" class="item-hover">
                                     <div class="item-info">
                                         <div class="headline headline-dezerti" name="Sponge Cake">
                                             Sponge Cake
@@ -392,7 +392,7 @@
                                 </div>
                             </div>
                             <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
-                                <a href="javascript:prozor()" class="item-hover">
+                                <a href="javascript:prozor('almond-cookies')" class="item-hover">
                                     <div class="item-info">
                                         <div class="headline headline-dezerti" name="Almond Cookies">
                                             Almond Cookies
@@ -411,7 +411,7 @@
                                 </div>
                             </div>
                             <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
-                                <a href="javascript:prozor()" class="item-hover">
+                                <a href="javascript:prozor('egg-tarts')" class="item-hover">
                                     <div class="item-info">
                                         <div class="headline headline-dezerti" name="Egg Tarts">
                                             Egg Tarts
@@ -612,7 +612,7 @@
                 <span class="title-caption" style="color: grey;">
                     Kolicina:
                 </span>
-                <input type="number" value="1">
+                <input id="kolicina" type="number" value="1">
                 <span class="title-caption" style="color: grey;">
                     Velicina porcije:
                 </span>
@@ -620,7 +620,7 @@
                 <label for="velicina-porcije1">mala</label><br>
                 <input type="radio" id="velicina-porcije2" name="velicina-porcije" value="60">
                 <label for="velicina-porcije2">velika</label><br>
-                <button >Dodaj u korpu</button>
+                <button id="dodavanje" onclick="dodaj()">Dodaj u korpu</button>
             </div>
         </div>
         <div class=".col-xs-1">
@@ -634,8 +634,41 @@
   
 </body>
 <script>
-    function prozor(){
+
+    function dodaj(){
+        if(localStorage.getItem('proizvodi')!=null){
+            proizvodi=JSON.parse(localStorage.getItem('proizvodi'))
+        }
+        jelo=localStorage.getItem('jelo');
+        k=localStorage.getItem('trenutnikorisnik');
+        ch=null
+        vel=document.getElementsByName('velicina-porcije');
+        if(vel[0].checked){
+            ch=30;
+        }
+        else if(vel[1].checked){
+            ch=60;
+        }
+
+        kol=document.getElementById("kolicina").value;
+        p={
+            korisnik:k,
+            imejela:jelo,
+            velicina:ch,
+            kolicina:kol
+
+        }
+
+        proizvodi.push(p);
+        localStorage.setItem('proizvodi',JSON.stringify(proizvodi));
+        
+        
+    }
+
+    function prozor(ime){
         document.querySelector("dialog").showModal()
+        localStorage.setItem('jelo',ime)
+        //console.log(ime);
     }
 
     document.querySelector("#close-modal").addEventListener('click',()=>{
@@ -644,6 +677,18 @@
     
 
     $(document).ready(function () {
+
+        korisnici=[];
+        proizvodi=[];
+        narudzbine=[];
+
+       
+
+        if(localStorage.getItem('proizvodi')!=null){
+            proizvodi=JSON.parse(localStorage.getItem('proizvodi'))
+        }
+
+
         $('#sort-button').click(function () {
             var items = $('.special-box .item').get();
 

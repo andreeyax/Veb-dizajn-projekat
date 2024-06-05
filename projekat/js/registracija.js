@@ -1,7 +1,8 @@
 
 
 korisnici=[];
-
+proizvodi=[];
+narudzbine=[];
 
 $(document).ready(function(){
     
@@ -10,7 +11,17 @@ $(document).ready(function(){
     }
     else{
         korisnici=JSON.parse(localStorage.getItem('korisnici'));
+        
     }
+
+    if(localStorage.getItem('proizvodi')!=null){
+        proizvodi=JSON.parse(localStorage.getItem('proizvodi'))
+    }
+
+    if(localStorage.getItem('narudzbine')!=null){
+        narudzbine=JSON.parse(localStorage.getItem('narudzbine'))
+    }
+    
 
 });
 
@@ -42,7 +53,8 @@ function registrujse(){
     //registruj ga
     let korisnik={
         ime:unosime,
-        lozinka:unoslozinka
+        lozinka:unoslozinka,
+        
     }
     korisnici.push(korisnik)
     localStorage.setItem('korisnici',JSON.stringify(korisnici));

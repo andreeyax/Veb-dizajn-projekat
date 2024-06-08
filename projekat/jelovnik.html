@@ -39,12 +39,62 @@
     <![endif]-->
 
     <style>
-        .zvezda{
+        .item-img img{
+            
+        }
+        select {
+            
+            appearance: none;
+            
+            background-color: transparent;
+            border: none;
+            padding: 0 1em 0 0;
+            margin: 0;
+            width: 100%;
+            font-family: inherit;
+            font-size: inherit;
+            cursor: inherit;
+            line-height: inherit;
+            
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 400px;
+            margin: auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            
+        }
+
+        .search-container input[type="text"] {
+            border: none;
+            outline: none;
+            flex: 1;
+            padding: 5px;
+        }
+
+        .search-container button {
+            background: none;
+            border: none;
             cursor: pointer;
         }
-        .zvezda.puna {
-            color: gold;
+
+        .search-container button img {
+            width: 20px;
+            height: 20px;
         }
+
+        #futer-slika{
+            width: 200px;
+            height: 200px;
+        }
+
+        
+
     </style>
 
 </head>
@@ -69,7 +119,7 @@
                                 </button>
                                 <div class="logo">
                                     <a class="navbar-brand js-scroll-trigger logo-header" href="#">
-                                        <img src="images/logo.png" alt="">
+                                        <img src="images/logo.png" alt="" id="panda">
                                     </a>
                                 </div>
                             </div>
@@ -130,22 +180,33 @@
     </div>
     <!-- end banner -->
 
+    <div style="background-color: #E59866;">
+        <div class="search-container" >
+            <input type="text" id="search-bar" placeholder="Pretražite...">
+            <button id="search-button" onclick="pretrazi()">
+                <img src="slike/lupa.png" alt="Search Icon">
+            </button>
+        </div>
+    </div>
+    
     <!--PREDJELA-->
     <div id="predjela" style="background-color: bisque;" >
+        
         <div class="container">
             <div class="row" style="margin-top: 35px;">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
-                        <h2 class="block-title color-white text-center"> Predjela</h2>
+                        <h2 class="block-title color-white text-center"> Predjela
+                        </h2>            
                         <h5 class="title-caption text-center" style="color: grey;">
                             Naš izbor predjela je osmišljen da probudi vaša čula i pripremi vas za uživanje u glavnim jelima.<br>
                             Sa pažnjom odabrani sastojci i autentični recepti garantuju nezaboravno gastronomsko iskustvo. Uživajte u raznovrsnosti ukusa koji odražavaju bogatstvo naše kulinarske tradicije.
                             Naše predjela su idealan način da započnete svoj obrok, pružajući vam prvi utisak o našoj kulinarskoj veštini i posvećenosti kvalitetu.
                         </h5>
                     </div>
-                    <div class="special-box" style="padding-bottom: 10px !important;">
-                        <div id="owl-demo" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
-                            <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
+                    <div class="special-box">
+                        <div id="owl-demo" class="owl-carousel owl-theme owl-dd1" style="opacity: 1; display: block;">
+                            <div id="1" class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
                                 <a href="#" class="item-hover">
                                     <div class="item-info">
                                         <div class="headline" name="steamed buns">
@@ -162,7 +223,7 @@
                                     <img src="slike/jelovnik/best11.jpg" alt="sp-menu" style="height: 350px;">
                                 </div>
                             </div>
-                            <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
+                            <div id="2" class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
                                 <a href="#" class="item-hover">
                                     <div class="item-info">
                                         <div class="headline" name="Crispy Crab Rangoon">
@@ -181,7 +242,7 @@
                                     <img src="slike/jelovnik/crispy-crab-rangoon.jpg" alt="sp-menu" style="height: 350px;">
                                 </div>
                             </div>
-                            <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
+                            <div id="3" class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
                                 <a href="#" class="item-hover">
                                     <div class="item-info">
                                         <div class="headline">
@@ -200,9 +261,12 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="text-center">
+                            <button id="button-sort" class="btn btn-danger">sortiraj po nazivu</button>
+                        </div>
                     </div>
-                    
                     <!-- end special-box -->
+                    
                 </div>
                 <!-- end col -->
             </div>
@@ -226,8 +290,8 @@
                         </h5>
                     </div>
                     <div class="special-box">
-                        <div id="owl-demo" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
-                            <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
+                        <div id="owl-demo" class="owl-carousel owl-theme owl-dd2" style="opacity: 1; display: block;">
+                            <div id="4" class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
                                 <a href="#" class="item-hover">
                                     <div class="item-info">
                                         <div class="headline">
@@ -246,7 +310,7 @@
                                     <img src="slike/jelovnik/chinese-spareribs.jpg" alt="sp-menu" style="height: 350px;">
                                 </div>
                             </div>
-                            <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
+                            <div id="5" class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
                                 <a href="#" class="item-hover">
                                     <div class="item-info">
                                         <div class="headline">
@@ -263,7 +327,7 @@
                                     <img src="slike/jelovnik/best2.jpg" alt="sp-menu" style="height: 350px;">
                                 </div>
                             </div>
-                            <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
+                            <div id="6" class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
                                 <a href="#" class="item-hover">
                                     <div class="item-info">
                                         <div class="headline">
@@ -284,9 +348,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    
-                        
+                        <div class="text-center">
+                            <button id="button-sort2" class="btn btn-danger">sortiraj po nazivu</button>
+                        </div>
                     </div>
                     <!-- end special-box -->
                 </div>
@@ -308,12 +372,9 @@
                             Izaberite nešto iz naše ponude kako biste završili obrok sa stilom. Od tradicionalnih kineskih poslastica do internacionalnih favorita, naši dezerti su savršen završetak vašeg obroka.
                         </h5>
                     </div>
-                    <div class="text-center">
-                        <button id="sortBtn" class="btn btn-primary">Sort by Name</button>
-                    </div>
                     <div class="special-box">
-                        <div id="owl-demo" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
-                            <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
+                        <div id="owl-demo" class="owl-carousel owl-theme owl-dd3" style="opacity: 1; display: block;">
+                            <div id="7" class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
                                 <a href="#" class="item-hover">
                                     <div class="item-info">
                                         <div class="headline headline-dezerti" name="Sponge Cake">
@@ -333,7 +394,7 @@
                                     <img src="slike/jelovnik/sponge-cake.jpg" alt="sp-menu" style="height: 350px;">
                                 </div>
                             </div>
-                            <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
+                            <div id="8" class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
                                 <a href="#" class="item-hover">
                                     <div class="item-info">
                                         <div class="headline headline-dezerti" name="Almond Cookies">
@@ -352,7 +413,7 @@
                                     <img src="slike/jelovnik/almond-cookies.jpg" alt="sp-menu" style="height: 350px;">
                                 </div>
                             </div>
-                            <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
+                            <div id="9" class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
                                 <a href="#" class="item-hover">
                                     <div class="item-info">
                                         <div class="headline headline-dezerti" name="Egg Tarts">
@@ -373,17 +434,11 @@
                                     <img src="slike/jelovnik/egg-tarts.jpg" alt="sp-menu" style="height: 350px;">
                                 </div>
                             </div>
-                            
-                            
                         </div>
-
-                        
                     </div>
-                    
-
-                    <!--ODAVDE -->
-                    
-
+                    <div class="text-center">
+                        <button id="button-sort3" class="btn btn-danger">sortiraj po nazivu</button>
+                    </div>
                     <!-- end special-box -->
                 </div>
                 
@@ -409,7 +464,7 @@
                     <div class="footer-in-main">
                         <div class="footer-logo">
                             <div class="text-center">
-                                <img src="images/logo.png" alt="" />
+                                <img src="images/logo.png" alt="" id="futer-slika"/>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
@@ -522,16 +577,210 @@
 
     <a href="#" class="scrollup" style="display: none;">Scroll</a>
 
-    
+
 
     <!-- ALL JS FILES -->
     <script src="js/all.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
-
-   
+    <script src="potrebni fajlovi/jquery-3.7.0.min.js"></script>
+    
 </body>
+
+<script>
+    function scrollToSection(sectionId) {
+        var target = $('#' + sectionId);
+        if (target.length) {
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 1000);
+        }
+    }
+
+    function pretrazi(){
+        //search-bar
+        naziv=document.getElementById("search-bar").value
+        if(naziv.toLowerCase()=="parene lepinjice" || naziv.toLowerCase()=="kineske prolecne rolnice" || naziv.toLowerCase()=="chinese spring rolls" || naziv.toLowerCase()=="crispy crab rangoon"){
+            scrollToSection('predjela')
+        }else if(naziv.toLowerCase()=="mapo tofu" || naziv.toLowerCase()=="honey walnut shrimp" || naziv.toLowerCase()=="chinese spareribs"){
+            scrollToSection('glavnajela')
+        }
+        else if(naziv.toLowerCase()=="sponge cake" || naziv.toLowerCase()=="egg tarts" || naziv.toLowerCase()=="almond cookies"){
+            scrollToSection('dezert')
+        }
+    }
+
+
+    $("#button-sort").click(function() {
+        
+        var items = $('.owl-dd1').children('.item');
+    
+        var newDivContent1 = `
+        <a href="#" class="item-hover">
+                    <div class="item-info">
+                                        <div class="headline">
+                                            Kineske Prolećne Rolnice (Chinese Spring Rolls)
+                                            <div class="line"></div>
+                                            <div class="dit-line"> 
+                                                Naše kineske prolećne rolnice su hrskave, zlatne i pune sveže pripremljenog povrća i mesa. Serviramo ih uz slatko-kiseli sos koji savršeno dopunjuje njihov ukus i teksturu.
+                                            </div>
+                                            <div class="line"></div>
+                                            <h5 class="dit-line" style="color: white;">Mala porcija: 600 din <br>Velika porcija: 820 din</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img" >
+                                    <img src="slike/jelovnik/best3.jpg" alt="sp-menu" style="height: 350px;">
+                                </div>
+        `;   
+        
+        
+
+        var newDivContent3 = `
+        <a href="#" class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline" name="steamed buns">
+                                            Parene lepinjice (Steamed Buns)
+                                            <div class="line"></div>
+                                            <div class="dit-line">Naše parene lepinjice su savršena kombinacija mekanog, pahuljastog testa i bogatog punjenja. 
+                                            </div>
+                                            <div class="line"></div>
+                                            <h5 class="dit-line" style="color: white;">Mala porcija: 550 din <br>Velika porcija: 790 din</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div >
+                                    <img src="slike/jelovnik/best11.jpg" alt="sp-menu" style="height: 350px;">
+                                </div>
+        `;  
+
+        document.getElementById('1').innerHTML = newDivContent1;
+        document.getElementById('3').innerHTML = newDivContent3;
+    })
+
+
+    $("#button-sort2").click(function() {
+        var items = $('.owl-dd2').children('.item');
+    
+        var newDivContent5 = `
+        <a href="#" class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            Honey Walnut Shrimp
+                                            <div class="line"></div>
+                                            <div class="dit-line"> 
+                                                Honey Walnut Shrimp je jelo koje kombinuje hrskavost kozica, bogatstvo oraha i slatkoću medenog preliva. 
+                                                Svaki zalogaj je harmonija između sočnih kozica umotanih u hrskavu koricu, prelivene slatkom i kremastom medeno-orahovom glazurom. 
+                                                Ovo jelo osvaja srca. 
+                                            </div>
+                                            <div class="line"></div>
+                                            <h5 class="dit-line" style="color: white;">Mala porcija: 720 din <br>Velika porcija: 1080 din</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img" >
+                                    <img src="slike/jelovnik/honey-walnut-shrimp.jpg" alt="sp-menu" style="height: 350px;">
+                                </div>
+        `;   
+        
+        var newDivContent6 = `
+                                <a href="#" class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            Mapo Tofu (Mapo Tofu)
+                                            <div class="line"></div>
+                                            <div class="dit-line">
+                                                Mapo Tofu je jedno od najpopularnijih jela naše kuhinje, poznato po svojoj pikantnosti i bogatstvu ukusa. </div>
+                                                <div class="line"></div>
+                                            <h5 class="dit-line" style="color: white;">Mala porcija: 680 din <br>Velika porcija: 1020 din</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img" >
+                                    <img src="slike/jelovnik/best2.jpg" alt="sp-menu" style="height: 350px;">
+                                </div>
+        `;  
+
+        document.getElementById('6').innerHTML = newDivContent6;
+        document.getElementById('5').innerHTML = newDivContent5;
+    })
+
+
+    $("#button-sort3").click(function() {
+        var items = $('.owl-dd3').children('.item');
+    
+        var newDivContent7 = `
+        <a href="#" class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline headline-dezerti" name="Almond Cookies">
+                                            Almond Cookies
+                                            <div class="line"></div>
+                                            <div class="dit-line">
+                                                Almond Cookies su hrskavi i mirisni keksići koji savršeno kombinuju bogatstvo badema sa blagom slatkoćom. 
+                                                Pripremljeni po tradicionalnom receptu, ovi keksići su idealni za sve prilike. 
+                                             </div>
+                                             <div class="line"></div>
+                                            <h5 class="dit-line" style="color: white;">Mala porcija: 500 din <br>Velika porcija: 740 din</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img" >
+                                    <img src="slike/jelovnik/almond-cookies.jpg" alt="sp-menu" style="height: 350px;">
+                                </div>
+        `;   
+        
+        var newDivContent8 = `
+                                <a href="#" class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline headline-dezerti" name="Egg Tarts">
+                                            Egg Tarts
+                                            <div class="line"></div>
+                                            <div class="dit-line"> 
+                                                Egg Tarts su klasične kineske poslastice koje osvajaju svojim kremastim punjenjem i hrskavom korom. 
+                                                Svaka tartaleta sadrži bogat, glatki krem od jaja ušuškan u zlatno, hrskavo testo. 
+                                                Savršeno uravnoteženi, delikatan spoj blage slatkoće i kremaste teksture. 
+                                
+                                            </div>
+                                            <div class="line"></div>
+                                            <h5 class="dit-line" style="color: white;">Mala porcija: 580 din <br>Velika porcija: 820 din</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img" >
+                                    <img src="slike/jelovnik/egg-tarts.jpg" alt="sp-menu" style="height: 350px;">
+                                </div>
+        `;  
+
+        var newDivContent9 = `
+                               <a href="#" class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline headline-dezerti" name="Sponge Cake">
+                                            Sponge Cake
+                                            <div class="line"></div>
+                                            <div class="dit-line">
+                                                Sponge Cake je lagan i vazdušast dezert koji se topi u ustima. 
+                                                Pripremljen sa pažljivo odabranim sastojcima, ovaj kolač ima savršeno uravnotežen ukus i delikatnu teksturu. 
+                                                Savršen je izbor za one koji žele uživati u jednostavnom, ali izuzetno ukusnom desertu. 
+                                                </div>
+                                            <div class="line"></div>
+                                            <h5 class="dit-line" style="color: white;">Mala porcija: 520 din <br>Velika porcija: 780 din</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div >
+                                    <img src="slike/jelovnik/sponge-cake.jpg" alt="sp-menu" style="height: 350px;">
+                                </div>
+        `;  
+
+        document.getElementById('7').innerHTML = newDivContent7;
+        document.getElementById('8').innerHTML = newDivContent8;
+        document.getElementById('9').innerHTML = newDivContent9;
+    })
+
+
+
+</script>
 
 
 

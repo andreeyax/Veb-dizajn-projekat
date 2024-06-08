@@ -263,6 +263,7 @@ html, body{ height: 100%; }
 #header{}
 .logo{
 	float:left;
+    
 }
 .header-block-top{
 	position: absolute;

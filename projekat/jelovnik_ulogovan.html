@@ -103,6 +103,12 @@
         .modal-content22 button:hover {
             background-color: #E59866;
         }
+        
+        .zvezda{
+            cursor: pointer;
+        }
+        
+    
     </style>
 
 </head>
@@ -142,6 +148,11 @@
                                     <li><a href="#footer">Kontakt</a></li>
                                     <li>
                                         <a class="nav-link" href="index.html">Pocetna</a>
+                                    </li>
+                                    <li>
+                                        <a href="moj_profil.html" class="login-icon">
+                                            <i class="fa fa-user icon"></i> <span id="profile-text">Moj Profil</span>
+                                        </a>
                                     </li>
                                     <li>
                                         <a class="nav-link" href="galerija2.html">Galerija</a>
@@ -202,7 +213,7 @@
                         </h5>
                     </div>
                     <!--<button id="sort-button" class="btn btn-primary mb-3">Sortiraj po imenu</button>-->
-                    <div class="special-box">
+                    <div class="special-box" style="padding-bottom: 10px !important;">
                         <div id="owl-demo" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
                           
                             <div class="item item-type-zoom col-sm-4" style="padding-left: 1px; padding-right: 1px; width: 350px">
@@ -264,6 +275,45 @@
                         </div>
                     </div>
                     <!-- end special-box -->
+                    <div>
+                        <div class="col-sm-4" style="justify-content: center;display: flex;font-size: 20px">
+                            <span class="zvezda" onclick="oceni(1,'steamed-buns')" id="1">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(2,'steamed-buns')" id="2">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(3,'steamed-buns')" id="3">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(4,'steamed-buns')" id="4">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(5,'steamed-buns')" id="5">&#9734;</span>
+                            <span id="prosek0" style="margin-left: 20px;"></span>
+                        </div>
+                        <div class="col-sm-4" style="justify-content: center;display: flex;font-size: 20px;">
+                            <span class="zvezda" onclick="oceni(6,'crispy-crab-rangoon')" id="6">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(7,'crispy-crab-rangoon')" id="7">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(8,'crispy-crab-rangoon')" id="8">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(9,'crispy-crab-rangoon')" id="9">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(10,'crispy-crab-rangoon')" id="10">&#9734;</span>
+                            <span id="prosek1" style="margin-left: 20px;"></span>
+                        </div>
+                        <div class="col-sm-4" style="justify-content: center;display: flex;font-size: 20px;">
+                            <span class="zvezda" onclick="oceni(11,'chinese-spring-rolls')" id="11">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(12,'chinese-spring-rolls')" id="12">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(13,'chinese-spring-rolls')" id="13">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(14,'chinese-spring-rolls')" id="14">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(15,'chinese-spring-rolls')" id="15">&#9734;</span>
+                            <span id="prosek2" style="margin-left: 20px;"></span>
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <div class="col-sm-4" style="justify-content: center;display: flex;font-size: 20px" id="steamed-buns">
+                            
+                        </div>
+                        <div class="col-sm-4" style="justify-content: center;display: flex;font-size: 20px;" id="crispy-crab-rangoon">
+                            
+                        </div>
+                        <div class="col-sm-4" style="justify-content: center;display: flex;font-size: 20px;" id="chinese-spring-rolls">
+                            
+                        </div>
+                        
+                    </div>
                 </div>
                 <!-- end col -->
             </div>
@@ -347,6 +397,45 @@
                         </div>
                     </div>
                     <!-- end special-box -->
+                    <div>
+                        <div class="col-sm-4" style="justify-content: center;display: flex;font-size: 20px">
+                            <span class="zvezda" onclick="oceni(16,'chinese-spareribs')" id="16">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(17,'chinese-spareribs')" id="17">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(18,'chinese-spareribs')" id="18">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(19,'chinese-spareribs')" id="19">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(20,'chinese-spareribs')" id="20">&#9734;</span>
+                            <span id="prosek3" style="margin-left: 20px;"></span>
+                        </div>
+                        <div class="col-sm-4" style="justify-content: center;display: flex;font-size: 20px;">
+                            <span class="zvezda" onclick="oceni(21,'mapo-tofu')" id="21">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(22,'mapo-tofu')" id="22">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(23,'mapo-tofu')" id="23">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(24,'mapo-tofu')" id="24">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(25,'mapo-tofu')" id="25">&#9734;</span>
+                            <span id="prosek4" style="margin-left: 20px;"></span>
+                        </div>
+                        <div class="col-sm-4" style="justify-content: center;display: flex;font-size: 20px;">
+                            <span class="zvezda" onclick="oceni(26,'honey-walnut-shrimp')" id="26">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(27,'honey-walnut-shrimp')" id="27">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(28,'honey-walnut-shrimp')" id="28">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(29,'honey-walnut-shrimp')" id="29">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(30,'honey-walnut-shrimp')" id="30">&#9734;</span>
+                            <span id="prosek5" style="margin-left: 20px;"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col-sm-4" style="justify-content: center;display: flex;font-size: 20px" id="chinese-spareribs">
+                            
+                        </div>
+                        <div class="col-sm-4" style="justify-content: center;display: flex;font-size: 20px;" id="mapo-tofu">
+                            
+                        </div>
+                        <div class="col-sm-4" style="justify-content: center;display: flex;font-size: 20px;" id="honey-walnut-shrimp">
+                            
+                        </div>
+                        
+                    </div>
+                        
                 </div>
                 <!-- end col -->
             </div>
@@ -439,6 +528,47 @@
                     </div>
 
                     <!--ODAVDE -->
+                    
+                    <div>
+                        <div class="col-sm-4" style="justify-content: center;display: flex;font-size: 20px;">
+                            <span class="zvezda" onclick="oceni(31,'sponge-cake')" id="31">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(32,'sponge-cake')" id="32">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(33,'sponge-cake')" id="33">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(34,'sponge-cake')" id="34">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(35,'sponge-cake')" id="35">&#9734;</span>
+                            <span id="prosek6" style="margin-left: 20px;"></span>
+                        </div>
+                        <div class="col-sm-4" style="justify-content: center;display: flex;font-size: 20px;">
+                            <span class="zvezda" onclick="oceni(36,'almond-cookies')" id="36">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(37,'almond-cookies')" id="37">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(38,'almond-cookies')" id="38">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(39,'almond-cookies')" id="39">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(40,'almond-cookies')" id="40">&#9734;</span>
+                            <span id="prosek7" style="margin-left: 20px;"></span>
+                        </div>
+                        <div class="col-sm-4" style="justify-content: center;display: flex;font-size: 20px;">
+                            <span class="zvezda" onclick="oceni(41,'egg-tarts')" id="41">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(42,'egg-tarts')" id="42">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(43,'egg-tarts')" id="43">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(44,'egg-tarts')" id="44">&#9734;</span>
+                            <span class="zvezda" onclick="oceni(45,'egg-tarts')" id="45">&#9734;</span>
+                            <span id="prosek8" style="margin-left: 20px;"></span>
+                        </div>
+                        
+                        
+                    </div>
+                    <div>
+                        <div class="col-sm-4" style="justify-content: center;display: flex;font-size: 20px" id="sponge-cake">
+                            
+                        </div>
+                        <div class="col-sm-4" style="justify-content: center;display: flex;font-size: 20px;" id="almond-cookies">
+                            
+                        </div>
+                        <div class="col-sm-4" style="justify-content: center;display: flex;font-size: 20px;" id="egg-tarts">
+                            
+                        </div>
+                        
+                    </div>
                     
 
                     <!-- end special-box -->
@@ -634,6 +764,113 @@
   
 </body>
 <script>
+    let ocene=[]
+    let ocenjeno=[]
+    
+
+    function oceni(broj,jelo){
+        //PROVERA DA LI JE VEC TRENUTNI KORISNIK OCENIO
+        for(let i=0;i<ocenjeno.length;i++){
+            if(ocenjeno[i].korisnik==localStorage.getItem('trenutnikorisnik') && ocenjeno[i].ocjelo==jelo){
+                console.log("Vec ste ocenili ovo jelo")
+                document.getElementById(jelo).innerHTML="Vec ste ocenili ovo jelo";
+                setTimeout(function(){
+                    document.getElementById(jelo).innerHTML="";
+                },3000)
+                return;
+            }
+
+        }
+
+
+        //oboji sve nazad
+        for(let i=1;i<46;i++){
+            document.getElementById(""+i).innerHTML='&#9734';
+        }
+
+        let j=0;
+        for(let i=0;i<9;i++){
+            if(ocene[i].naziv==jelo){
+                j=i;
+                break;
+            }
+        }
+
+        if(broj%5==0){
+            //SVIH 5
+            
+            document.getElementById(""+broj).innerHTML="&#9733";
+            document.getElementById(""+parseInt(broj-1)).innerHTML="&#9733";
+            document.getElementById(""+parseInt(broj-2)).innerHTML="&#9733";
+            document.getElementById(""+parseInt(broj-3)).innerHTML="&#9733";
+            document.getElementById(""+parseInt(broj-4)).innerHTML="&#9733";
+
+            ocene[j].grades.push(5);
+
+        }
+        else if(broj%5==1){
+            document.getElementById(""+broj).innerHTML="&#9733";
+            ocene[j].grades.push(1);
+        }
+        else if(broj%5==2){
+            document.getElementById(""+broj).innerHTML="&#9733";
+            document.getElementById(""+parseInt(broj-1)).innerHTML="&#9733";
+            ocene[j].grades.push(2);
+        }
+        else if(broj%5==3){
+            document.getElementById(""+broj).innerHTML="&#9733";
+            document.getElementById(""+parseInt(broj-1)).innerHTML="&#9733";
+            document.getElementById(""+parseInt(broj-2)).innerHTML="&#9733";
+            ocene[j].grades.push(3);
+
+        }
+        else if(broj%5==4){
+            document.getElementById(""+broj).innerHTML="&#9733";
+            document.getElementById(""+parseInt(broj-1)).innerHTML="&#9733";
+            document.getElementById(""+parseInt(broj-2)).innerHTML="&#9733";
+            document.getElementById(""+parseInt(broj-3)).innerHTML="&#9733";
+            ocene[j].grades.push(4);
+        }
+
+        let sum=0;
+        for(let m=0;m<ocene[j].grades.length;m++){
+            sum+=parseInt(ocene[j].grades[m]);
+        }
+
+        console.log(parseFloat(sum/ocene[j].grades.length))
+        localStorage.setItem("ocene",JSON.stringify(ocene))
+
+
+        for(let x=0;x<9;x++){
+            let sum=0.0;
+            if(ocene[x].grades.length==0){
+                document.getElementById("prosek"+x).innerHTML=sum.toFixed(2);
+            }
+            else{
+                for(let y=0;y<ocene[x].grades.length;y++){
+                    sum+=ocene[x].grades[y];
+                }
+                document.getElementById("prosek"+x).innerHTML=parseFloat((sum/ocene[x].grades.length).toFixed(2));
+
+            }
+        }
+
+
+        //DODAJ U OCENJENE
+        k=localStorage.getItem('trenutnikorisnik')
+        let rate={
+            korisnik:k,
+            ocjelo:jelo
+
+        }
+
+        ocenjeno.push(rate);
+        localStorage.setItem('ocenjeno',JSON.stringify(ocenjeno));
+
+
+
+
+    }
 
     function dodaj(){
         if(localStorage.getItem('proizvodi')!=null){
@@ -677,10 +914,52 @@
     
 
     $(document).ready(function () {
+        var username = localStorage.getItem('trenutnikorisnik');
+
+        if (username) {
+            document.getElementById('profile-text').textContent = username;
+        }
 
         korisnici=[];
         proizvodi=[];
         narudzbine=[];
+        if(localStorage.getItem("ocene")==null){
+            ocene=[
+                {naziv:'steamed-buns',grades:[]},{naziv:'crispy-crab-rangoon',grades:[]},{naziv:'chinese-spring-rolls',grades:[]},
+                {naziv:'chinese-spareribs',grades:[]},{naziv:'mapo-tofu',grades:[]},{naziv:'honey-walnut-shrimp',grades:[]},
+                {naziv:'sponge-cake',grades:[]},{naziv:'almond-cookies',grades:[]},{naziv:'egg-tarts',grades:[]}
+            ]
+
+            localStorage.setItem("ocene",JSON.stringify(ocene))
+        }
+        else{
+
+            ocene=JSON.parse(localStorage.getItem('ocene'));
+
+        }
+
+        if(localStorage.getItem('ocenjeno')==null){
+            ocenjeno=[]
+        }
+        else{
+            ocenjeno=JSON.parse(localStorage.getItem('ocenjeno'))
+        }
+
+
+        for(let x=0;x<9;x++){
+            let sum=0.0;
+            if(ocene[x].grades.length==0){
+                document.getElementById("prosek"+x).innerHTML=sum.toFixed(2);
+            }
+            else{
+                for(let y=0;y<ocene[x].grades.length;y++){
+                    sum+=ocene[x].grades[y];
+                }
+                let t=sum/ocene[x].grades.length;
+                document.getElementById("prosek"+x).innerHTML=parseFloat(t.toFixed(2));
+
+            }
+        }
 
        
 

@@ -39,6 +39,54 @@
     <![endif]-->
 
     <style>
+        .item-img img{
+            
+        }
+        select {
+            
+            appearance: none;
+            
+            background-color: transparent;
+            border: none;
+            padding: 0 1em 0 0;
+            margin: 0;
+            width: 100%;
+            font-family: inherit;
+            font-size: inherit;
+            cursor: inherit;
+            line-height: inherit;
+            
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 400px;
+            margin: auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            
+        }
+
+        .search-container input[type="text"] {
+            border: none;
+            outline: none;
+            flex: 1;
+            padding: 5px;
+        }
+
+        .search-container button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .search-container button img {
+            width: 20px;
+            height: 20px;
+        }
         #futer-slika{
             width: 200px;
             height: 200px;
@@ -75,19 +123,23 @@
                                 <ul class="nav navbar-nav navbar-right">
                                     <li class="active"><a href="#banner">Home</a></li>
                                     
-                                    <li><a href="#predjela">Predjela</a></li>
-                                    <li><a href="#glavnajela">Glavna Jela</a></li>
-                                    <li><a href="#dezert">Dezerti</a></li>
+                                    <li><a href="#predjela">Appetizers</a></li>
+                                    <li><a href="#glavnajela">Main coursers</a></li>
+                                    <li><a href="#dezert">Desserts</a></li>
                                     
-                                    <li><a href="#footer">Kontakt</a></li>
+                                    <li><a href="#footer">Contact</a></li>
                                     <li>
-                                        <a class="nav-link" href="index2.html">Pocetna</a>
+                                        <a class="nav-link" href="index_en_ulogovan.html">Home page</a>
                                     </li>
                                     <li>
-                                        <a class="nav-link" href="galerija2.html">Galerija</a>
+                                        <a class="nav-link" href="galerija2_en.html">Gallery</a>
+                                    </li>
+                                    <li class="custom-sel">
+                                        <a class="selected" href="jelovnik.html">SRB &nbsp;<i class="fa fa-caret-down lightblue" aria-hidden="true"></i></a>
+                                        <a class="hidden" href="jelovnik_en.html">ENG</a>
                                     </li>
                                     <li>
-                                        <a class="nav-link" href="onama2.html">O nama</a>
+                                        <a class="nav-link" href="onama2_en.html">About us</a>
                                     </li>
                                     
                                 </ul>
@@ -111,9 +163,9 @@
                 <div class="banner-static">
                     <div class="banner-text">
                         <div class="banner-cell">
-                            <h1>Red Panda </h1>
-                            <h2>Najbolji kineski restoran  </h2>
-                            <p>Uverite se u nas kvalitet i atmosferu koju nudimo</p>
+                            <h1>Red Panda</h1>
+                            <h2>Best chinese restaurant</h2>
+                            <p>Experience the quality and atmosphere we offer</p>
                            
                             
                         </div>
@@ -128,6 +180,18 @@
         <!-- end container -->
     </div>
     <!-- end banner -->
+    <div style="background-color: #E59866;">
+        <div class="search-container" >
+            <input type="text" id="search-bar" placeholder="Search...">
+            <button id="search-button" onclick="pretrazi()">
+                <img src="slike/lupa.png" alt="Search Icon">
+            </button>
+
+        </div>
+        <div style="justify-content: center;display: flex;margin-top: 15px;">
+            <a href="jelovnici/menu.pdf" target="_blank" style="font-size: 20px;color: white;">Download menu</a>
+        </div>
+    </div>
 
     <!--PREDJELA-->
     <div id="predjela" style="background-color: bisque;" >

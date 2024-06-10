@@ -112,6 +112,54 @@
             width: 200px;
             height: 200px;
         }
+        .item-img img{
+            
+        }
+        select {
+            
+            appearance: none;
+            
+            background-color: transparent;
+            border: none;
+            padding: 0 1em 0 0;
+            margin: 0;
+            width: 100%;
+            font-family: inherit;
+            font-size: inherit;
+            cursor: inherit;
+            line-height: inherit;
+            
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 400px;
+            margin: auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            
+        }
+
+        .search-container input[type="text"] {
+            border: none;
+            outline: none;
+            flex: 1;
+            padding: 5px;
+        }
+
+        .search-container button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .search-container button img {
+            width: 20px;
+            height: 20px;
+        }
         
     
     </style>
@@ -162,6 +210,10 @@
                                     <li>
                                         <a class="nav-link" href="galerija2.html">Galerija</a>
                                     </li>
+                                    <li class="custom-sel">
+                                        <a class="selected" href="jelovnik_en_ulogovan.html">ENG &nbsp;<i class="fa fa-caret-down lightblue" aria-hidden="true"></i></a>
+                                        <a class="hidden" href="jelovnik_ulogovan.html">SRB</a>
+                                    </li>
                                     <li>
                                         <a class="nav-link" href="onama2.html">O nama</a>
                                     </li>
@@ -203,6 +255,18 @@
         <!-- end container -->
     </div>
     <!-- end banner -->
+    <div style="background-color: #E59866;">
+        <div class="search-container" >
+            <input type="text" id="search-bar" placeholder="Pretražite...">
+            <button id="search-button" onclick="pretrazi()">
+                <img src="slike/lupa.png" alt="Search Icon">
+            </button>
+
+        </div>
+        <div style="justify-content: center;display: flex;margin-top: 15px;">
+            <a href="jelovnici/jelovnik.pdf" target="_blank" style="font-size: 20px;color: white;">Preuzmite jelovnik</a>
+        </div>
+    </div>
 
     <!--PREDJELA-->
     <div id="predjela" style="background-color: bisque;" >

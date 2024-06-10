@@ -59,7 +59,7 @@ function prijava_en(){
     }
     
 
-    document.getElementById("greska").innerHTML="Incorrect username or password entered";
+    document.getElementById("greska").innerHTML="Pogrešno uneseno korisničko ime ili lozinka";
     setTimeout(function(){
         document.getElementById("greska").innerHTML=""
         document.getElementById("unos_ime").value="";
